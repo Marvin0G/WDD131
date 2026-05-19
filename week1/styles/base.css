@@ -1,0 +1,246 @@
+:root{
+
+  --color-primary: #ffc107;  /* Navy */
+  --color-accent: #ffffff;   /* A nice yellow */
+  --color-text: #2d3748;     /* Dark grey for text */
+  --color-bg: rgb(31, 116, 5);
+  --color-bg-main: #1a202c;  /* black - perfect for main background */
+  --font-heading: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-primary: 'Momo Trust Display', sans-serif;
+
+  --spacing-medium: 20px;
+  --border-radius-standard: 9px;
+}
+
+body {       
+    font-family: var(--font-primary);
+    background-color: var(--color-bg-main);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 20px 0;
+}
+
+.myname {
+    color: var(--color-accent);
+}
+.flexnav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-bg);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius-standard);
+}
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+}
+a {
+    margin: 0;
+    padding: 8px 0;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: larger;
+    font-family: var(--font-primary);
+    position: relative;
+}
+
+/* Navigation link hover effect */
+.navigation a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-accent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: right;
+}
+
+.navigation a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+footer {
+    background-color: var(--color-bg);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+.myheader-name {
+    grid-column: 1 / -1;
+    background-color: var(--color-bg);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.myheader-name h1 {
+    margin: 0;
+    color: var(--color-accent);
+}
+
+.card {
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    color: white;
+    padding: 20px;
+}
+
+.card h1 {
+    margin: 0;
+    padding: 15px 20px;
+    color: var(--color-accent);
+    text-align: center;
+}
+
+.me-1, .me-2 {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.me-1 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.me-2 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.me-1 img, .me-2 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.me-1 h1, .me-2 h1 {
+    grid-column: 1 / -1;
+    color: var(--color-accent);
+    margin-bottom: 15px;
+}
+
+.gridnav {
+    padding: 20px;
+    background-color: var(--color-bg);
+    border-radius: 8px;
+}
+
+.gridnav h1 {
+    color: var(--color-accent);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gridnav nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gridnav li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.gridnav li:hover {
+    transform: translateX(10px);
+    border-bottom-color: var(--color-accent);
+}
+
+.gridnav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.gridnav a:hover {
+    color: var(--color-accent);
+}
+
+.me p {
+    margin: 20px 0;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.me section {
+    margin-bottom: 30px;
+    width: 100%;
+}
+#course-title{
+    background-color: var(--color-bg);
+    
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+header h1{
+  color: var(--color-primary);  
+} 
+#name{
+    color:var(--color-accent) ;
+    text-shadow: 6cm;
+
+}
+h1,h2,h3{
+    font-family: var(--font-heading);
+}
