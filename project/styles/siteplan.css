@@ -1,0 +1,88 @@
+/* 🎨 GLOBAL DESIGN VARIABLES */
+:root {
+    --primary-color: #800000;   /* Deep Maroon */
+    --secondary-color: #1a4d4d; /* Soft Teal */
+    --accent-color: #ffcc00;    /* Warning Gold */
+    --bg-color: #f9f9f9;        /* Clean Light Grey */
+    --text-color: #222222;      /* Dark Grey */
+}
+
+/* BASE STYLES */
+body {
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 0;
+}
+
+/* COLOR PALETTE BOXES */
+.color-palette {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.color-box {
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.maroon-box { background-color: #800000; }
+.teal-box { background-color: #1a4d4d; }
+.gold-box { background-color: #ffcc00; color: black; }
+
+/* WIREFRAMES */
+.wireframe-placeholder {
+    background-color: #eee;
+    border: 2px dashed #999;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
