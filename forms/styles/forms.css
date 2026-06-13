@@ -1,0 +1,103 @@
+/* GLOBAL RESETS */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a4d4d; /* Brand primary tone */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* STRUCTURAL LAYOUT GROUPS */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* DATA FIELD ELEMENT BASICS */
+select, 
+input[type="date"], 
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Secures full padding reliability on mobile */
+    font-size: 1rem;
+}
+
+.required {
+    color: #d9534f; /* Alert Red color to denote required fields */
+}
+
+/* DISPLAY GRIDS FOR MULTIPLE CHOICES */
+.rating-container, 
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+}
+
+.rating-container label, 
+.checkbox-container label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* PURE CSS STYLED ACTIONS */
+.submit-btn {
+    background-color: #1a4d4d;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #113333;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
